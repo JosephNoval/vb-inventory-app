@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "t5vPcW9Mp/0PagwPegVQ29k8R6YatxcXXLS0aZLUCv+Tj0cSSNHuXTl/9B3kv6BYrs16xuirRukaMtcoUcEBdQ==",
+  "success": true,
+  "projectFilePath": "E:\\Personal Projects\\InventoryManagementApp\\InventoryManagementApp.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\fontawesome.sharp\\5.15.3\\fontawesome.sharp.5.15.3.nupkg.sha512"
+  ],
+  "logs": []
+}
