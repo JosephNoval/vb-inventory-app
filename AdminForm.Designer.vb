@@ -39,6 +39,8 @@ Partial Class AdminForm
         Me.IconCurrentForm = New FontAwesome.Sharp.IconPictureBox()
         Me.PanelDesktop = New System.Windows.Forms.Panel()
         Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
+        Me.btnInventoryReport = New FontAwesome.Sharp.IconButton()
+        Me.btnSalesReport = New FontAwesome.Sharp.IconButton()
         Me.SidePanel.SuspendLayout()
         Me.PanelLogo.SuspendLayout()
         CType(Me.ImageHome, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,6 +53,8 @@ Partial Class AdminForm
         'SidePanel
         '
         Me.SidePanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.SidePanel.Controls.Add(Me.btnSalesReport)
+        Me.SidePanel.Controls.Add(Me.btnInventoryReport)
         Me.SidePanel.Controls.Add(Me.btnOrders)
         Me.SidePanel.Controls.Add(Me.btnLogout)
         Me.SidePanel.Controls.Add(Me.btnInventory)
@@ -335,6 +339,50 @@ Partial Class AdminForm
         Me.IconPictureBox1.TabIndex = 1
         Me.IconPictureBox1.TabStop = False
         '
+        'btnInventoryReport
+        '
+        Me.btnInventoryReport.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnInventoryReport.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnInventoryReport.FlatAppearance.BorderSize = 0
+        Me.btnInventoryReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnInventoryReport.ForeColor = System.Drawing.Color.Gainsboro
+        Me.btnInventoryReport.IconChar = FontAwesome.Sharp.IconChar.FileContract
+        Me.btnInventoryReport.IconColor = System.Drawing.Color.Gainsboro
+        Me.btnInventoryReport.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnInventoryReport.IconSize = 40
+        Me.btnInventoryReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnInventoryReport.Location = New System.Drawing.Point(0, 380)
+        Me.btnInventoryReport.Name = "btnInventoryReport"
+        Me.btnInventoryReport.Padding = New System.Windows.Forms.Padding(10, 0, 20, 0)
+        Me.btnInventoryReport.Size = New System.Drawing.Size(250, 60)
+        Me.btnInventoryReport.TabIndex = 7
+        Me.btnInventoryReport.Text = "Inventory Report"
+        Me.btnInventoryReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnInventoryReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnInventoryReport.UseVisualStyleBackColor = True
+        '
+        'btnSalesReport
+        '
+        Me.btnSalesReport.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSalesReport.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnSalesReport.FlatAppearance.BorderSize = 0
+        Me.btnSalesReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSalesReport.ForeColor = System.Drawing.Color.Gainsboro
+        Me.btnSalesReport.IconChar = FontAwesome.Sharp.IconChar.FileContract
+        Me.btnSalesReport.IconColor = System.Drawing.Color.Gainsboro
+        Me.btnSalesReport.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btnSalesReport.IconSize = 40
+        Me.btnSalesReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnSalesReport.Location = New System.Drawing.Point(0, 440)
+        Me.btnSalesReport.Name = "btnSalesReport"
+        Me.btnSalesReport.Padding = New System.Windows.Forms.Padding(10, 0, 20, 0)
+        Me.btnSalesReport.Size = New System.Drawing.Size(250, 60)
+        Me.btnSalesReport.TabIndex = 8
+        Me.btnSalesReport.Text = "Order Report"
+        Me.btnSalesReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnSalesReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnSalesReport.UseVisualStyleBackColor = True
+        '
         'AdminForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -377,4 +425,6 @@ Partial Class AdminForm
     Friend WithEvents btnMaximized As FontAwesome.Sharp.IconButton
     Friend WithEvents btnLogout As FontAwesome.Sharp.IconButton
     Friend WithEvents txtCurrentUser As TextBox
+    Friend WithEvents btnSalesReport As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnInventoryReport As FontAwesome.Sharp.IconButton
 End Class

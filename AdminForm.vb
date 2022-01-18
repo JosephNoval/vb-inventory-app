@@ -242,4 +242,22 @@ Public Class AdminForm
             End If
         End If
     End Sub
+
+    Private Sub btnInventoryReport_Click(sender As Object, e As EventArgs) Handles btnInventoryReport.Click
+        If lblFormTitle.Text = "Orders" Then
+            If DirectCast(currentChildForm, FormOrders).DataGridViewOrderDetails.RowCount > 0 Then
+                DirectCast(currentChildForm, FormOrders).VoidOrderDetailItems()
+            End If
+        End If
+        OpenChildForm(New FormInventoryReportViewer(), sender)
+    End Sub
+
+    Private Sub btnSalesReport_Click(sender As Object, e As EventArgs) Handles btnSalesReport.Click
+        If lblFormTitle.Text = "Orders" Then
+            If DirectCast(currentChildForm, FormOrders).DataGridViewOrderDetails.RowCount > 0 Then
+                DirectCast(currentChildForm, FormOrders).VoidOrderDetailItems()
+            End If
+        End If
+        OpenChildForm(New FormSalesReportViewer(), sender)
+    End Sub
 End Class
