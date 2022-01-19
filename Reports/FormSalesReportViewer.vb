@@ -60,7 +60,7 @@ Public Class FormSalesReportViewer
             da.SelectCommand = New MySqlCommand("SELECT b.OrderNo, c.Name as Description, a.Price, a.Quantity, (a.Price * a.Quantity) as Total, b.OrderDate, d.DisplayName as CreatedBy
 	                                                    FROM orderdetails a inner join orders b on a.OrderId = b.Id
                                                         inner join products c on a.ProductId = c.Id
-                                                        inner join users d on a.CreatedBy = d.Id
+                                                        inner join users d on b.CreatedBy = d.Id
                                                         where a.RecordStatus = 'Active' and b.RecordStatus = 'Active' 
                                                         and date(OrderDate) between '" & dtpFromDate.Value.ToString("yyyy-MM-dd") & "' and '" & dtpToDate.Value.ToString("yyyy-MM-dd") & "'", Con)
             da.Fill(ds.Tables("DTSales"))
